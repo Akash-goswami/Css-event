@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="img/logo (1).svg" alt="">
+            </div>
+            <div class="inputSerch">
+                <input type="text" placeholder="Search for products" class="serchInp">
+                <i class="fa-solid fa-magnifying-glass serchbar"></i>
+            </div>
+            <div class="contectUsInp">
+                <img src="img/customer-service.png" alt="" width="34px" height="34px">
+                <p>
+                    24/7 SUPPORT <br>
+                    +123 456 789
+                </p>
+            </div>
+        </nav>
+        <div class="midNav">
+            <ul class="ListIt">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <a href="loginWeb.html" class="log">Login / Register </a>
+            <ul class="cartFlex">
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li><a href="checkOut.html" style="text-decoration: none; color: black;"><i class="fa-solid fa-cart-plus"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="checkout-container" >
+        <div class="form-container">
+            <h2>Checkout Form</h2>
+            <form action="/submit-checkout" method="POST">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email..">
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your address..">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Your city..">
+
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Your state..">
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" placeholder="Your zip code..">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="summary-container">
+            <h2>Order Summary</h2>
+            <div class="product">
+                <p>Product 1</p>
+                <p>$50.00</p>
+            </div>
+            <div class="product">
+                <p>Product 2</p>
+                <p>$30.00</p>
+            </div>
+            <div class="product">
+                <p>Product 3</p>
+                <p>$20.00</p>
+            </div>
+            <hr>
+            <div class="total">
+                <p>Total</p>
+                <p>$100.00</p>
+            </div>
+        </div>
+    </div>
+    <section id = "footer">
+        <div id = "footer-box">
+            <div>
+                <img src="img/logo (1).svg" alt="">
+            </div>
+            <div class="footer-item">
+                <h4>About Us</h4>
+                <p class="footer-title"> If you own an Iphone, you’ve probably already worked out how much fun it is to use it to watch movies-it has that. </p>
+
+            </div>
+
+            <div class="footer-item">
+                <h4> Newsletter</h4>
+                <p class="footer-title"> Stay update with our latest</p>
+                <div><input type="text" placeholder="Email Address"> <button><i class="fa-solid fa-arrow-right"></i></button></div>
+
+            </div>
+
+            <div class="footer-item">
+                <h4> Follow Us</h4>
+                <p class="footer-title"> Let us be social</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-basketball"></i>
+                    <i class="fa-brands fa-behance"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id = "copyright">
+            © 2024 Pixel Fashtion Store. All Rights Reserved.s made with  <i class="fa-regular fa-heart" style="color: #d1ab7f;"></i> by <span style="color: #d1ab7f;"> Colorlib </span>
+        </div>
+
+    </section>
+</body>
+</html>
